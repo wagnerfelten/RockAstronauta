@@ -57,6 +57,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  animation: img-anime 2s;
 }
 
 .card-container {
@@ -159,4 +161,70 @@ footer {
 
   padding: 20px;
   color: #fff;
+}
+
+@media (min-width: 1200px){
+  .explor-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25px 108px 25px;
+  }
+
+  .content-container{
+    padding: 10px;
+  }
+
+  .content-container h1{
+    font-size: 2em;
+    margin-top: 150px;
+  }
+
+  .content-container h3{
+    font-size: 1em;
+  }
+
+  .content-container img{
+    
+    margin-top: 100px;
+    margin-left: -4px;
+  }
+
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+  }
+
+  .card{
+    height: 340px;
+    padding: 25px;
+  }
+
+  .form-container{
+    background-image: url("../img/star-cheia.png");
+    height: 720px;
+  }
+
+  .center-container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 50px;
+  }
+
+  footer{
+    height: 100px;
+  }
+}
+
+@keyframes img-anime {
+  0%{
+    margin-bottom: 500px;
+    margin-top: 500px;
+  }
+  100%{
+    margin-bottom: 0px;
+    margin-top: 0;
+  }
 }
